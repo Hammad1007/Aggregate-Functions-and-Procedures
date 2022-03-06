@@ -143,23 +143,17 @@ Select * from emp e join dept d on e.d_ID = d.did
 
 -- Displays the total number of male and female employees
 Select e.gender, count(*)
-From Emp e
-Group by e.gender
+From Emp e Group by e.gender
 
 -- Counts the number of employees in each department
 Select e.d_ID, count(e.d_ID) AS [Students in Dept]
-From emp e
-group by e.d_ID
+From emp e group by e.d_ID
 
 -- Displays the total number of employees, max age, min age, average age
-Select count(*) AS [Total Employees], max(e.age) AS [Max Age], min(e.age) AS [Min Age], avg(e.age) AS [Avg Age]
-From Emp e
+Select count(*) AS [Total Employees], max(e.age) AS [Max Age], min(e.age) AS [Min Age], avg(e.age) AS [Avg Age] From Emp e
 
 --- All employees who have a as a second letter in their names and their dept id and dname
-Select *  
-From Emp e JOIN dept d on e.d_ID = d.did
-where e.name LIKE('_a%')
-Order by e.d_ID asc
+Select *  From Emp e JOIN dept d on e.d_ID = d.did where e.name LIKE('_a%') Order by e.d_ID asc
 
 -- Displays dept having no employees
 -- IS NULL WALI EXAMPLE

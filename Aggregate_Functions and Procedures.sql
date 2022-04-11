@@ -116,6 +116,8 @@ EXECUTE spcountofemployeesongender 'M', @Emp_Total_Male OUTPUT
 PRINT('TOTAL COUNT OF MALE EMPLOYEES IS:')
 PRINT @Emp_Total_Male
 
+
+			--------------------------------------------------------------------------------------------------------------------------
 -- CREATE PROCEDURE Procedure_Name
 -- AS
 -- BEGIN  working   END
@@ -124,7 +126,7 @@ PRINT @Emp_Total_Male
 -- To delete the procedure, DELETE PROCEDURE Procedure_Name
 
 -- PRINT statement to print details
-
+			---------------------------------------------------------------------------------------------------------------------------
 -- All employees who have a as a second letter in their name
 Select * from emp e
 where e.name LIKE '_a%'

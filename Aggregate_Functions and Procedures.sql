@@ -11,7 +11,7 @@ did int primary key,
 [dname] varchar(10)
 );
 
--- insert into department
+-- insert into department table
 insert into [dept] values(1, 'CS')
 insert into [dept] values(2, 'MGT')
 insert into [dept] values(3, 'BIOTECH')
